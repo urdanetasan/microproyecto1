@@ -74,7 +74,7 @@ var players = [];
                 winners.map((player) => player.name).join(", ") +
                 " con " +
                 maxScore +
-                " punto(s)!"
+                " punto(s)! "
             );
           }
         }
