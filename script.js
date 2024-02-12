@@ -62,7 +62,7 @@ var players = [];
           var winners = players.filter((player) => player.score === maxScore);
           if (winners.length === 1) {
             alert(
-              "¡El ganador es " +
+              "¡Ha ganado " +
                 winners[0].name +
                 " con " +
                 maxScore +
