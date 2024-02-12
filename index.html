@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bingoo!</title>
+    <title>¡Juega al bingo con tus amigos!</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button onclick="startGame()">Iniciar juego</button>
-    <button onclick="resetGame()">Reiniciar juego</button>
-    <div id="turns"></div>
+    <h1>Bingo!</h1>
+    <button id="generate-number" onclick="generateNumber()">
+      Generar número
+    </button>
+    <div id="turns">Turno: 0 - Número generado: -</div>
     <div id="players"></div>
+    <div class="navigation">
+      <button onclick="showPreviousPlayer()">Jugador anterior</button>
+      <button onclick="showNextPlayer()">Siguiente jugador</button>
+    </div>
+    <button id="reset" onclick="resetGame()">Volver a jugar</button>
     <script src="./script.js"></script>
   </body>
 </html>
